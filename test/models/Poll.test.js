@@ -5,13 +5,13 @@ describe('Poll model', () => {
     const poll = new Poll({
       question: 'how are you today?',
       inputs: ['good', 'meh', 'not great'],
-      userId: '1234'
+      email: 'email@email.com'
     });
   
     expect(poll.toJSON()).toEqual({
       question: 'how are you today?',
       inputs: ['good', 'meh', 'not great'],
-      userId: '1234',
+      email: 'email@email.com',
       _id: expect.any(Object)
     });
   });
