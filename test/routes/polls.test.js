@@ -36,5 +36,15 @@ describe('polls route', () => {
           _id: expect.any(String)
         });
       });
+
+      
+  });
+
+  it('gets a list of polls', () => {
+    return request(app) 
+      .get('/polls')
+      .then(res => {
+        expect(res.body).toHaveLength(5);
+      });
   });
 });
