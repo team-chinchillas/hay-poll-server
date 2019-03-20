@@ -73,7 +73,10 @@ describe('polls route', () => {
     return request(app)
       .get(`/polls/${_id}/results`)
       .then(res => {
-        expect(res.body).toEqual(1);
+        expect(res.body).toEqual([{
+          _id,
+          choices: expect.any(Array)
+        }]);
       });
   });
 
