@@ -2,3 +2,9 @@ language: node_js
 node_js: node
 services: mongodb
 env: MONGODB_URI=mongodb://127.0.0.1:27017/hay-poll
+deploy:
+  provider: heroku
+  app:
+    master: haypoll-server-chinchillas
+  api_key:
+    secure: vWmvPGRDq6ZTWjmlASAoyrvcPeWXb/GONTIXGFGmBrqYx10XJ9c+ABh98R/tu50JYdjh/doxe4raoFT0P09SfYTkalEg7M8SxCs9zMi9M1EYztT3RO+qOJz01Fp84LlQLRgw0+59l5ly/t51XbRt/5il8/CSsF+T/X2mDMP6uFwLp70BQftRSxeQGLowNo9LBVb4TMWSCd12UzgYqSO6xN3UzfBtu95BUZ5HCtf6aFcGhePJqZN4/2UvqqOpjAfs1HVotY7vu6aGyHUUsgIJPkQPTUnLY4pG6U1PmPNjKWbaUjSTdfj2w9/MbfDk7TOc/oj8cHf++5IRrXGY+eBiMaKAjuFBOrqMXul045/oLOspsJe8DLOezkt4GFhtc7esPcGwJaQJ6yczzIdZFcsh/gG+tH1PHAHz2OhtAwo+jVYycwna0BJGKVTNi24SDe4fxYa6L4xfifkS9gbCWIxn7Gqt6A2+fx7plVIubTI6QjbI785JSgC7lHUyOeKH5E80pcs6CmqxLaoqF7i8z/IPZ4FIEG0OcUt7qeeidhORL9VAO5GBNZXk2ni2B1i/CJ8sNrPP4CJwR27cEpE1siJ7f8R7S+iW4ilnYPr4/bqw2ocgYe0H14pg76RnzHvUTbW/IKxRcdLd+PCkre6QteRPynTi5dkFdpYNUwYRbkfask8=
