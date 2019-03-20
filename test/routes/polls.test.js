@@ -67,7 +67,15 @@ describe('polls route', () => {
           __v: 0 });
       });
   });
-
+ 
+  it('get results from poll', async() => {
+    const { _id } = await getPoll();
+    return request(app)
+      .get(`/polls/${_id}/results`)
+      .then(res => {
+        expect(res.body).toEqual(1);
+      });
+  });
 
 
 
